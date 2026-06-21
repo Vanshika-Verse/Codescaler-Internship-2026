@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+        integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #0F172A;
+            /* #3B82F6  #1c93a3 */
+            position: fixed;
+        }
+
+        .nav-logo {
+            font-size: 32px;
+            font-weight: 600;
+            padding: 24px 136px;
+        }
+
+        .nav-items a:hover {
+            transform: scale(1.07);
+        }
+
+        .nav-items ul a {
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            /* padding: 24px 32px; */
+            margin: 24px;
+            color: white;
+        }
+
+        .nav-items ul li {
+            display: flex;
+        }
+
+        .primary-color {
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn {
+            height: 50px;
+            width: 120px;
+            border-radius: 24px;
+            font-size: 16px;
+            background-color: #3B82F6;
+            border-color: #3064f3;
+            border: 0px;
+        }
+
+        .btn:hover {
+            transform: scale(1.07);
+        }
+
+        .icons {
+            display: flex;
+            gap: 6px;
+            margin: 11px;
+            padding: 17px;
+        }
+
+        .icons i {
+            padding: 14px 14px;
+        }
+
+        .hero-pic img {
+            width: 100%;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 45%;
+            left: 5%;
+            color: white;
+            padding: 0px;
+        }
+
+        .h1text {
+            font-size: 80px;
+            padding: 12px 0px;
+        }
+
+        .typing {
+            width: 13ch;
+            color: transparent;
+            -webkit-text-stroke: 2px white;
+            overflow: hidden;
+            white-space: nowrap;
+            animation:
+                typing 2s steps(13) forwards,
+                blink 0.7s infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 13ch;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        .hero-text p {
+            font-size: 17px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+
+        .hero-btn {
+            margin-top: 40px;
+        }
+
+        .tpbtn {
+            background: transparent;
+            border: 1px solid white;
+            margin-left: 14px;
+            width: 150px;
+        }
+        .profile-pic img{
+            padding: 50px;
+            border-radius: 60px;
+            margin-top: 15px;
+        }
+        .profile-text {
+            position: absolute;
+            top: 125%;
+            left: 45%;
+            padding: 20px;
+            color: white;
+            max-width: 650px;
+        }
+
+        .pf-h1 {
+            max-width: 450px;
+        }
+
+        .pfp {
+            padding: 12px 0px;
+            line-height: 1.5;
+        }
+
+        .bgcolor2 {
+            background-color: #0F172A;
+            height: 650px;
+        }
+
+        .left p,
+        .right p {
+            display: grid;
+            grid-template-columns: 60px auto;
+            line-height: 2;
+        }
+
+        .contact-info {
+            padding: 30px 100px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .follow {
+            padding: 32px 0px;
+            display: flex;
+        }
+        .follow p{
+            padding-right: 32px;
+        }
+        .follow i{
+           padding-right: 20px;
+        }
+        .pfbtn{
+            margin: 20px 0px;
+        }
+        .cvbtn{
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-logo primary-color">
+                    <i class="fa-brands fa-asymmetrik"></i> UI Portfolio
+                </div>
+                <div class="nav-items flex ">
+                    <ul class="flex  ">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#pages">Pages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="icons primary-color">
+                    <button type="button" class="btn primary-color">Hire Me</button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-moon"></i>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section class="hero">
+            <div class="hero-pic">
+                <img src="assets/bluebgpic.avif" height="700px" width="100%">
+            </div>
+            <div class="hero-text ">
+                <h1>Hi, I'm John Watson</h1>
+                <h1 class="h1text  typing">Web Developer </h1>
+                <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give
+                    your business a new Creative start right away!</p>
+                <div class="hero-btn">
+                    <button type="button" class="btn primary-color">Hire Me</button>
+                    <button type="button" class="btn primary-color tpbtn">My Portfolio</button>
+                </div>
+            </div>
+            <div class="bgcolor2">
+                <div class="profile-pic">
+                    <img src="assets/heropf.jpg">
+                </div>
+                <div class="profile-text">
+                    <p class="pfp">MY BIOGRAPHY</p>
+                    <h1 class="pf-h1">A Lead UI Designer & Web Developer Based In UK</h1>
+                    <p class="pfp">I love Graphic design and Photography and have been working on my portfolio since
+                        2016. I Can give your business a new Creative start right away! Contact me and we will discuss
+                        your projects!</p>
+                    <hr>
+
+                    <section class="contact-info">
+                        <div class="left">
+                            <p><strong>Name:</strong> John Watson</p>
+                            <p><strong>Email:</strong> example@mail.com</p>
+                        </div>
+
+                        <div class="right">
+                            <p><strong>From:</strong> London, UK</p>
+                            <p><strong>Phone:</strong> +21 234 567 8901</p>
+                        </div>
+                    </section>
+                    <div class="follow">
+                        <p><strong>Follow me on</strong></p>
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                    <div class="hero-btn pfbtn">
+                    <button type="button" class="btn primary-color">Hire Me</button>
+                    <button type="button" class="btn primary-color tpbtn cvbtn">Download CV</button>
+                </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
